@@ -25,7 +25,7 @@ const Links = () => {
         <div>
           {links.map(link => (
             <Link
-            className="p-2 sm:mx-5 focus:bg-black focus:rounded-2xl focus:text-white" 
+            className="p-2 sm:mx-5 focus:bg-white focus:rounded-2xl focus:text-black" 
             href={link.path} 
             key={link.title}>
               {link.title}
