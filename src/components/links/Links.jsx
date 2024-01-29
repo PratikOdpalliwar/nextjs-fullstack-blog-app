@@ -20,6 +20,9 @@ const Links = () => {
             path:"/blog",
         },
     ];
+
+    const session = true;
+    const isAdmin= true;
      
     return (
         <div>
@@ -31,6 +34,12 @@ const Links = () => {
               {link.title}
               </Link>
           ))}
+          {/* {
+            session ? (
+              {
+              isAdmin ? ({title:"Admin", path:"/admin"}) : null
+              }) : ({title:"login", path:"/login"})
+          } */} 
         </div>
       );
   
